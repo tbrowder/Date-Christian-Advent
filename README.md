@@ -10,7 +10,7 @@ SYNOPSIS
 
 ```raku
 use Date::Christian::Advent;
-say Advent-Sunday 2021;
+say Advent-Sunday 2021; # OUTPUT: «2021-11-28␤»
 ```
 
 DESCRIPTION
@@ -24,7 +24,13 @@ The three routines all take a year as their only argument and return a `Date` ob
     sub Advent-Sunday2($year --> Date) is export {...}
     sub Advent-Sunday3($year --> Date) is export {...}
 
-1. The first method the detrmine the 
+Method 1: Find the Sunday closest to November 30 (The Feast of St. Andrew). If November 30 is a Sunday, St. Andrew gets moved. [Source: Malcolm Heath <malcolm@indeterminate.net>]
+
+Method 2: Find the Sunday following the last Thursday in November. [Source: Malcolm Heath <malcolm@indeterminate.net>]
+
+Method 3: Find the 4th Sunday before Christmas, not counting the Sunday which may be Christmas. Note this is the method attempted by the author of the Perl CPAN module `DateTime::Calendar::Liturgical::Christian`, but it was wrong as noted in the bug report on the CPAN site.
+
+Note: Methods 1 and 2 were suggested by author of the bug report filed with the Perl CPAN module `DateTime::Calendar::Liturgical::Christian` which was the inspiration for this module.
 
 AUTHOR
 ======
