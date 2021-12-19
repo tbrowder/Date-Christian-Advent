@@ -30,8 +30,9 @@ sub Advent-Sunday3($year --> Date) is export {...}
 =end code
 
 Method 1: Find the Sunday closest to November 30 (The Feast of
-St. Andrew). If November 30 is a Sunday, St. Andrew gets moved.
-[Source: Malcolm Heath <malcolm@indeterminate.net>]
+St. Andrew), either before or after. If November 30th is a Sunday,
+then that's First Advent and St. Andrew gets moved.  [Source: Malcolm
+Heath <malcolm@indeterminate.net>]
 
 Method 2: Find the Sunday following the last Thursday in
 November. [Source: Malcolm Heath <malcolm@indeterminate.net>]
@@ -42,9 +43,9 @@ the author of the Perl CPAN module
 C<DateTime::Calendar::Liturgical::Christian>, but it was wrong as
 noted in the bug report on the CPAN site.
 
-Note: Methods 1 and 2 were suggested by author of the bug report
-filed with the Perl CPAN module C<DateTime::Calendar::Liturgical::Christian>
-which was the inspiration for this module.
+Note: Methods 1 and 2 were suggested by author of the bug report filed
+with the Perl CPAN module C<DateTime::Calendar::Liturgical::Christian>
+which was partially the inspiration for this module.
 
 =head1 AUTHOR
 
