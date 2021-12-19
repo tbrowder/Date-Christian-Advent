@@ -1,0 +1,6 @@
+use Test;
+use Date::Christian::Advent;
+
+pass "replace me";
+
+done-testing;
