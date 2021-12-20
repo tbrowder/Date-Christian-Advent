@@ -50,7 +50,7 @@ sub Advent-Sunday3($y --> Date) is export {
         return $d - 28
     }
     else {
-        # find prev Sunday, count 21 days back from that
+        # find previous Sunday, count 21 days back from that
         # sun mon tue wed thu fri sat sun
         #  7   1   2   3   4   5   6   7
         #  0   1   2   3  -3  -2  -1   0
