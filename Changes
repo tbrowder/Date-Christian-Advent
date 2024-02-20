@@ -1,6 +1,8 @@
 Revision history for Date-Christian-Advent
 
 {{$NEXT}}
+
+0.0.2  2024-02-20T17:05:00-06:00
     - Add 3-OS workflows testing
     - Change README.pod to .rakudoc
     - Update copyright dates
